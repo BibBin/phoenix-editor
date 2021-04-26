@@ -1,11 +1,15 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+    <router-view/>
 </template>
-
+<script lang="ts">
+import {defineComponent} from 'vue'
+import 'bootstrap/dist/css/bootstrap.min.css'
+export default defineComponent({
+  setup(){
+    return {}
+  }
+})
+</script>
 <style lang="less">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
